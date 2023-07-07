@@ -1,0 +1,20 @@
+
+/* header .logo{
+    flex: 1;
+} */
+header a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+h1 {
+    display: flex;
+    direction: initial;
+    justify-content: center;
+}
+#heade {
+color: #f08000;
+}
+#white{
+    color: white;
+}

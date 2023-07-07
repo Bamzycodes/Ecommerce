@@ -1,0 +1,144 @@
+
+
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  max-width: 1230px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-shadow: o o 35px #eee;
+} */
+.amazon {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: large;
+  font-display: 3px;
+  background-color: black;
+}
+.site-container {
+  min-height: 100vh;
+}
+#heade {
+  color: #f08000;
+  }
+  #white{
+      color: white;
+  }
+main {
+  flex: 1;
+}
+.products {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+}
+.rating span {
+  color: #ffc000;
+}
+.product {
+  border: 1px #404040 solid;
+  flex-wrap: wrap;
+  justify-content: center;
+ /* max-height: 50em; */
+}
+.product img {
+  width:50%;
+  height: 200px;
+}
+.img-large {
+  max-width: 60%;
+}
+.img-thumbnail {
+  height: 80px;
+}
+.toast {
+color: red;
+}
+/* .spin {
+  color: #ffc000;
+  padding: 30px;
+  margin-left: 35em;
+} */
+.cardbox {
+  background-color: #f08000;
+}
+.table{
+  background-color: #f08000;
+}
+.sidenav{
+  border-right: 1px solid gray;
+  height: calc(100vh - 70px);
+  position: fixed;
+  overflow-y: auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.sidenav h3 {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+.sidenav a{
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+.dashboard{
+  display: flex;
+  height: 100vh;
+}
+.content{
+  margin-left: 200px;
+  padding: 2rem 3rem;
+  width: 100%;
+}
+.search{
+  color: #ffc000;
+}
+#link {
+  color: aliceblue;
+}
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
+}
+.small-container {
+  max-width: 600px;
+}
+.btnn{
+  background-color: #f08000;
+  border: #f08000;
+}
+#table {
+  color: white;
+  background-color: #f08000;
+  border-radius: 10px;
+  max-height: fit-content;
+}
+.pay {
+  background-color: green;
+}
+
+
+
+
