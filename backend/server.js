@@ -17,7 +17,9 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors())
 
-
+app.get('/', (req, res) => {
+  return res.json('hello iboytech and samhub31 to the world');
+});
 
 app.use('/api/order', orderRouter)
 app.use('/api/user', userRouter)
@@ -45,9 +47,9 @@ mongoose.connect(URI, {
     console.log(err.message);
   });
 
-// app.get('/',(req, res)=>{
-//     res.json({msg:"welcome to home page"})
-// })
+app.get('/',(req, res)=>{
+    res.json({msg:"welcome to home page"})
+})
 
 
 const PORT = process.env.PORT || 5000
