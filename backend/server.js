@@ -47,9 +47,9 @@ mongoose.connect(URI, {
     console.log(err.message);
   });
 
-// app.get('/',(req, res)=>{
-//     res.json({msg:"welcome to home page"})
-// })
+app.get('/',(req, res)=>{
+    res.json({msg:"welcome to home page"})
+})
 
 
 const PORT = process.env.PORT || 5000
