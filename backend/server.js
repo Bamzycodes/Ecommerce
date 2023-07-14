@@ -17,7 +17,9 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors())
 
-
+app.get('/', (req, res) => {
+  return res.json('hello iboytech and samhub31 to the world');
+});
 
 app.use('/api/order', orderRouter)
 app.use('/api/user', userRouter)
