@@ -36,7 +36,10 @@ app.get("*", (req, res) => {
  
 mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 5000, 
+    socketTimeoutMS: 45000,
+})
 })
   .then(() => {
     console.log('connected to db');
