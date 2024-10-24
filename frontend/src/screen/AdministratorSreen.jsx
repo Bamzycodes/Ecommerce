@@ -50,6 +50,7 @@ function AdministratorScreen() {
   aria-label="Admin Orders"
 >
   <i className="fas fa-clipboard mr-2"></i>
+  Orders
 </Link>
 
             </li>

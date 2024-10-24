@@ -6,8 +6,12 @@ import userRouter from './routes/userRouter.js'
 import cookieParser from'cookie-parser'
 import productRouter from './routes/productRouter.js'
 import orderRouter from './routes/orderRoutes.js';
+import path from 'path'
 
 dotenv.config()
+
+
+const __dirname = path.resolve();
 
 
 const app = express()
@@ -22,7 +26,11 @@ app.use('/api/user', userRouter)
 app.use("/api/product", productRouter)
 
 
+app.use(express.static(path.join(__dirname, "/frontend/dist")))
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"))
+})
 
 // connect to mongoDB
  
