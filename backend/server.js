@@ -1,7 +1,5 @@
-
-import express from 'express'
-// import path from 'path';
 import dotenv from 'dotenv';
+import express from 'express'
 import mongoose from 'mongoose'
 import cors from'cors'
 import userRouter from './routes/userRouter.js'
@@ -22,19 +20,13 @@ app.use(cors())
 app.use('/api/order', orderRouter)
 app.use('/api/user', userRouter)
 app.use("/api/product", productRouter)
-// app.use('/images', express.static('images'))
 
-// const __dirname = path.resolve();
-// app.use(express.static(path.join(__dirname, '/frontend/build')));
-// app.get('*', (req, res) =>
-//   res.sendFile(path.join(__dirname, '/frontend/build/index.html'))
-// );
 
 
 
 // connect to mongoDB
-const URI = process.env.MONGODB_URL
-mongoose.connect(URI, {
+ 
+mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -45,12 +37,10 @@ mongoose.connect(URI, {
     console.log(err.message);
   });
 
-// app.get('/',(req, res)=>{
-//     res.json({msg:"welcome to home page"})
-// })
 
 
-const PORT = process.env.PORT || 5000
+
+const PORT = process.env.PORT || 8080
 app.listen(PORT, () =>{
     console.log('server is running on port', PORT)
 })
